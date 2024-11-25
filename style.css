@@ -1,0 +1,344 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Ga Maamli", sans-serif;
+    text-transform: lowercase;
+}
+.container{
+    background-color: #fff;
+    width: 100%;
+    position: relative;
+    height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.logo img{
+    width: 130px;
+    transition: .5s;
+    filter: grayscale(100%);
+    height: auto;
+    aspect-ratio: 1/1;
+}
+
+.logo img:hover{
+    filter: grayscale(0%);
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+    padding: 0 25px ;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    font-weight: 400;
+    transition: 0.5s;
+}
+ul li a:hover{
+    color: #00008f;
+    border-bottom: 1px #00008f solid;
+}
+.contane{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.contane .text{
+    text-transform: capitalize;
+    width: 40%;
+}
+.contane .text h2{
+    font-size: 50px;
+    margin: 10px 0;
+}
+.contane .text p{
+    letter-spacing: 1px;
+    color: #00008f;
+    font-size: 30px;
+    margin: 10px 0;
+}
+.contane .images{
+    width: 30%;
+}
+.contane .images img{
+    width: 300px;
+    margin: auto 0;
+}
+.btn{
+    background-color: #00008f;
+    color: #fff;
+    font-size: 19px;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    padding: 5px 8px;
+    margin: 10px 0;
+    text-decoration: none;
+}
+.icons{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.icons img{
+    width: 60px;
+    filter: grayscale(100%);
+    transition: .5s;
+    border: 2px solid #00008f;
+    margin: 0 5px;
+    aspect-ratio: 1/3;
+    height: 90px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.icons img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+.crude{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    margin: 30px auto;
+}
+.head h2{
+    font-size: 50px;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+.head p{
+    font-size: 40px;
+    font-style: italic;
+}
+.animtion { 
+    width: 200px;
+    transform: translateX(400px);
+}
+.inputs input{
+    width: 97%;
+    height: 30px;
+    background-color: #00008f5e;
+    color: #fff;
+    padding: 5px 8px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 10px;  
+    transition: 0.5s;  
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 17px;
+}
+input:focus,.outputs input:focus{
+    transform: scale(1.1);
+    border: 2px solid #000;
+    background-color: #00008fbe;
+}
+.price input{
+    width: 20%;
+    display: inline-block;
+    margin-left: 20px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 17px;
+}
+#deleteAll button{
+    width: 99%;
+    background-color: #00008f;
+    color: #fff;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin: 20px 0;
+}
+#total{
+    display: block;
+    background-color: #8f0000;
+    color: #fff;
+    padding: 10px 8px;
+    border-radius: 15px;
+    width: 97%;
+    text-align: center;
+    font-size: 20px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+#total::before{
+    content: 'Total : ';
+}
+.inputs button{
+    width: 99%;
+    background-color: #00008f;
+    color: #fff;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.outputs input{
+    width: 97%;
+    height: 30px;
+    background-color: #00008f5e;
+    color: #fff;
+    padding: 5px 8px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 10px;  
+    transition: 0.5s;  
+    letter-spacing: 1px;
+    font-weight: 300;
+    cursor: pointer;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 17px;
+}
+.searchInput {
+    width: 100%; 
+    display: flex; 
+    justify-content: space-around; 
+} 
+.searchInput button {
+    width: 34%; /* تقليل العرض لضمان وجود مساحة كافية بين الأزرار */ 
+    background-color: #00008f; 
+    color: #fff; 
+    border-radius: 10px; 
+    height: 40px; 
+    font-size: 20px; 
+    transition: 0.5s;
+    margin: 10px 0;
+    cursor: pointer;
+}
+table{
+    width: 100%;
+    text-align: center;
+}
+#updeta,#delete{
+    background-color: #00008f;
+    color: #fff;
+    border-radius: 10px;
+    height: 40px;
+    padding: 4px 12px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+td{
+    font-size: 20px;
+}
+::placeholder{
+    color: #000;
+    font-size: 15px;
+}
+th{
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.searchInput button:hover , #updeta:hover,#delete:hover , .inputs button:hover , #deleteAll button:hover{
+    background-color: #0c0ce2;
+    letter-spacing: 2px;
+}
+#scrollWed{
+    background-color: #000;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid #fff;
+    outline: none;
+    display: none;
+}
+#scrollWed i{
+    color: #fff;
+    font-size: 20px;
+}
+#scrollWed i:hover{
+    color: #0b0bca;
+}
+.tools { 
+    display: flex; 
+    justify-content: center; /* لتوسيط الصور أفقياً */ 
+    align-items: center; /* لتوسيط الصور عمودياً */ 
+    gap: 10px; /* مسافة بين الصور، يمكنك ضبطها حسب رغبتك */ 
+    margin: 20px 0;
+} 
+.tools img { 
+    width: 90px; /* عرض ثابت لكل الصور */ 
+    height: auto; /* للحفاظ على نسبة العرض إلى الارتفاع */ 
+}
+.warpper{
+    transform: translateX(400px);
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: #888181;
+    border-radius: 15px;
+    border: 3px solid rgba(255, 255, 255, .5);
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 20px #00008f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI';
+    padding: 0 30px;
+    text-align: center;
+    margin: 30px;
+}
+.warpper .form-box{
+    width: 100%;
+    padding: 20px 0;
+}
+.warpper .form-box h2{
+    font-size: 50px;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #000;
+    margin: 10px 0;
+}
+.input-box input{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    font-family: sans-serif;
+    transition: .5s;
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 20px;
+}
+
+.btnSubmit{
+    width: 100%;
+    background-color: #00008f;
+    color: #fff;
+    padding: 10px 0;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px #00008f;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Ga+Maamli&family=Lilita+One&family=Mouse+Memoirs&display=swap" rel="stylesheet">
+    <title>Create productes</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#" class="logo">
+                <img src="https://www.pinterest.com/pin/175781191700770333/" id="imgLogo">
+            </a>
+            <ul>
+                <li><a href="#create">create peoducts</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#sign">sign in</a></li>
+            </ul>
+        </header>
+
+        <div class="contane">
+            <div class="text">
+                <h2>objectives</h2>
+                <p>Dreams are the seeds that the soul plants, ambition is the sun that nourishes them,
+                 and action is the water that grows them and makes them blossom.</p>
+                 <a class="btn"  href="#create">create a producte</a>
+            </div>
+            <div class="images">
+                <img src="https://i.pinimg.com/736x/48/72/84/487284ea90c3d2e9840e5da005642e4b.jpg" name="main">
+            </div>
+        </div>
+
+        <div class="icons">
+            <img src="https://i.pinimg.com/736x/69/62/dd/6962dda7950859187a3b071cd0f0e880.jpg" onclick="main.src = this.src">
+            <img src="https://i.pinimg.com/736x/41/16/d1/4116d1c70023ba94ef0ebcc629f5e13a.jpg"  onclick="main.src = this.src">
+            <img src="https://i.pinimg.com/736x/a6/7d/10/a67d1074874e89d0de95354928e962e1.jpg" onclick="main.src = this.src">
+            <img src="https://i.pinimg.com/736x/8e/89/b6/8e89b60329b7790fb3f8c7ea1cfa709f.jpg" onclick="main.src = this.src">
+        </div>
+    </div>
+
+
+    <div class="crude" id="create">
+        <div class="head">
+            <h2>create a product</h2>
+            <p>Goals, dreams and ambition</p>
+        </div>
+
+
+        <div class="inputs">
+            <input type="text"  id="title" placeholder="title">
+            <div class="price">
+                <input onkeyup="equal();" type="number" id="price" placeholder="Price">
+                <input onkeyup="equal();" type="number" id="taxes" placeholder="Taxes">
+                <input onkeyup="equal();" type="number" id="ads" placeholder="Ads">
+                <input onkeyup="equal();" type="number" id="discount" placeholder="Discount">
+                <small id="total"></small>
+            </div>
+            <input type="number" id="count" placeholder="Count">
+            <input type="text" id="type" placeholder="Type">
+            <button id="sudimet">create</button>
+        </div>
+
+        <div class="outputs">
+            <input onkeyup=" searchJO(this.value)" type="text" id="search" placeholder="Search">
+            <div class="searchInput">
+                <button onclick="searchDta(this.id)" id="searchTitle">search by title</button>
+                <button onclick="searchDta(this.id)" id="searchType">search by type</button>
+            </div>
+        </div>
+
+        <div id="deleteAll">
+        </div>
+
+        <table>
+            <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>ads</th>
+                <th>taxes</th>
+                <th>discount</th>
+                <th>total</th>
+                <th>type</th>
+                <th>updeta</th>
+                <th>delete</th>
+            </tr>
+
+            <tbody id="tbody">
+            </tbody>
+
+        </table>
+    </div>
+    <button id="scrollWed">
+    <i class="fa-solid fa-jet-fighter-up"></i>
+    </button>
+
+    <div class="warpper" id="sign">
+        <div class="form-box">
+            <h2>sign in</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required placeholder="Email">
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required placeholder="Password">
+                </div>
+
+                <button type="submit" class="btnSubmit">click</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js">ojpergioher</script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
